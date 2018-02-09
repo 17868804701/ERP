@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./style/layui/css/layui.css" media="all">
+    <style>
+        body {
+            padding: 10px;
+        }
+        .selected {
+            width: 182px;
+        }
+        .layui-inline {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        td span {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<blockquote class="layui-elem-quote layui-text">
+    <form action="" class="layui-form">
+        <div class="layui-inline">
+            <div class="layui-inline">
+                <label class="layui-form-label">商品名称</label>
+                <div class="layui-input-inline">
+                    <input type="text" placeholder="商品名称" name="number" lay-verify="required|number" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">商品编号</label>
+                <div class="layui-input-inline">
+                    <input type="text" placeholder="商品编号" name="number" lay-verify="required|number" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">商品类别</label>
+                <div class="layui-input-inline selected">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="1">纸箱</option>
+                        <option value="2">木箱</option>
+                        <option value="3">钢制</option>
+                        <option value="4">摩托车</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">商品品牌</label>
+                <div class="layui-input-inline selected">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="1">长虹</option>
+                        <option value="2">宏业</option>
+                        <option value="3">美的</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">商品颜色</label>
+                <div class="layui-input-inline selected">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="1">黑色</option>
+                        <option value="2">白色</option>
+                        <option value="3">红色</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">规格型号</label>
+                <div class="layui-input-inline selected">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="1">XXXL-01</option>
+                        <option value="2">XXXL-02</option>
+                        <option value="3">XXXL-03</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">商品材质</label>
+                <div class="layui-input-inline selected">
+                    <select name="quiz">
+                        <option value="">请选择</option>
+                        <option value="1">木质</option>
+                        <option value="2">铁质</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline" style="margin-left:40px">
+                <div class="layui-inline">
+                    <button class="layui-btn layui-btn-sm" lay-submit="" lay-filter="demo1">查询</button>
+                    <button type="reset" class="layui-btn layui-btn-sm">添加</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</blockquote>
+<table class="layui-table" lay-size="sm">
+    <thead>
+        <td>序号</td>
+        <td>商品名称</td>
+        <td>商品编号</td>
+        <td>商品类别</td>
+        <td>品牌</td>
+        <td>单位</td>
+        <td>颜色</td>
+        <td>规格型号</td>
+        <td>材质</td>
+        <td>预设进价</td>
+        <td>预设售价</td>
+        <td>商品描述</td>
+        <td>操作</td>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>纸箱子</td>
+        <td>JHG5456451</td>
+        <td>家庭常用</td>
+        <td>美的</td>
+        <td>个</td>
+        <td>白</td>
+        <td>XXXL</td>
+        <td>纸质</td>
+        <td>20</td>
+        <td>30</td>
+        <td>本商品没有描述</td>
+        <td>
+            <span>修改</span>
+            <span>删除</span>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>纸箱子</td>
+        <td>JHG5456451</td>
+        <td>家庭常用</td>
+        <td>美的</td>
+        <td>个</td>
+        <td>白</td>
+        <td>XXXL</td>
+        <td>纸质</td>
+        <td>20</td>
+        <td>30</td>
+        <td>本商品没有描述</td>
+        <td>
+            <span>修改</span>
+            <span>删除</span>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>纸箱子</td>
+        <td>JHG5456451</td>
+        <td>家庭常用</td>
+        <td>美的</td>
+        <td>个</td>
+        <td>白</td>
+        <td>XXXL</td>
+        <td>纸质</td>
+        <td>20</td>
+        <td>30</td>
+        <td>本商品没有描述</td>
+        <td>
+            <span>修改</span>
+            <span>删除</span>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>纸箱子</td>
+        <td>JHG5456451</td>
+        <td>家庭常用</td>
+        <td>美的</td>
+        <td>个</td>
+        <td>白</td>
+        <td>XXXL</td>
+        <td>纸质</td>
+        <td>20</td>
+        <td>30</td>
+        <td>本商品没有描述</td>
+        <td>
+            <span>修改</span>
+            <span>删除</span>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>纸箱子</td>
+        <td>JHG5456451</td>
+        <td>家庭常用</td>
+        <td>美的</td>
+        <td>个</td>
+        <td>白</td>
+        <td>XXXL</td>
+        <td>纸质</td>
+        <td>20</td>
+        <td>30</td>
+        <td>本商品没有描述</td>
+        <td>
+            <span>修改</span>
+            <span>删除</span>
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>纸箱子</td>
+        <td>JHG5456451</td>
+        <td>家庭常用</td>
+        <td>美的</td>
+        <td>个</td>
+        <td>白</td>
+        <td>XXXL</td>
+        <td>纸质</td>
+        <td>20</td>
+        <td>30</td>
+        <td>本商品没有描述</td>
+        <td>
+            <span>修改</span>
+            <span>删除</span>
+        </td>
+    </tr>
+</table>
+<script src="./style/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function () {
+        var form = layui.form
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 5) {
+                    return '标题至少得5个字符啊';
+                }
+            }
+            , pass: [/(.+){6,12}$/, '密码必须6到12位']
+            , content: function (value) {
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听指定开关
+        form.on('switch(switchTest)', function (data) {
+            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+                offset: '6px'
+            });
+            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+        });
+
+        //监听提交
+        form.on('submit(demo1)', function (data) {
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+
+
+    });
+</script>
+</body>
+</html>

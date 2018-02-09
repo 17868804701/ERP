@@ -1,0 +1,120 @@
+{
+    "data": {
+        "list": [{
+          "id": 1,
+          "url": "",
+          "name": "基础管理",
+          "iconfont": "&#xe613;",
+          "sub": [
+            {
+              "id": 5,
+              "url": "/ERP/erpPages/productManger.html",
+              "name": "商品管理",
+              "iconfont": "&#xe637;"
+            },
+            {
+              "id": 6,
+              "url": "",
+              "name": "仓库管理",
+              "iconfont": "&#xe637;"
+            },
+            {
+              "id": 7,
+              "url": "",
+              "name": "员工管理",
+              "iconfont": "&#xe637;"
+            },
+            {
+              "id": 7,
+              "url": "",
+              "name": "基础参数",
+              "iconfont": "&#xe637;"
+            }
+          ]
+        },
+            {
+                "id": 3,
+                "url": "",
+                "name": "采购管理",
+                "iconfont": "&#xe672;",
+                "sub": [
+                  {
+                    "id": 10,
+                    "url": "/jqadmin/html/actvityRelease.html",
+                    "name": "供应商菜单",
+                    "iconfont": "&#xe672;"
+                  },
+                  {
+                    "id": 11,
+                    "url": "/jqadmin/html/actvityBaoming.html",
+                    "name": "采购订单",
+                    "iconfont": "&#xe672;"
+                  }
+
+                ]
+            },
+            {
+                "id": 4,
+                "url": "",
+                "name": "销售管理",
+                "iconfont": "&#xe689;",
+                "sub": [
+                  {
+                        "id": 13,
+                        "url": "/jqadmin/html/apply.html",
+                        "name": "客户管理",
+                        "iconfont": "&#xe646;"
+                  },
+                  {
+                    "id": 13,
+                    "url": "/jqadmin/html/xuefenShenhe.html",
+                    "name": "销售订单",
+                    "iconfont": "&#xe646;"
+                  }
+                ]
+            },{
+            "id": 1,
+            "url": "",
+            "name": "库存管理",
+            "iconfont": "&#xe613;",
+            "sub": [
+              {
+                "id": 5,
+                "url": "/jqadmin/html/studentInfo.html",
+                "name": "库存查看",
+                "iconfont": "&#xe637;"
+              },  {
+                "id": 5,
+                "url": "/jqadmin/html/studentInfo.html",
+                "name": "采购审核",
+                "iconfont": "&#xe637;"
+              },  {
+                "id": 5,
+                "url": "/jqadmin/html/studentInfo.html",
+                "name": "销售审核",
+                "iconfont": "&#xe637;"
+              }
+            ]
+          },{
+            "id": 1,
+            "url": "",
+            "name": "统计分析",
+            "iconfont": "&#xe613;",
+            "sub": [
+              {
+                "id": 6,
+                "url": "/jqadmin/html/import.html",
+                "name": "采购统计",
+                "iconfont": "&#xe637;"
+              },   {
+                "id": 6,
+                "url": "/jqadmin/html/import.html",
+                "name": "销售统计",
+                "iconfont": "&#xe637;"
+              }
+            ]
+          }
+        ]
+    },
+    "status": 200
+}
